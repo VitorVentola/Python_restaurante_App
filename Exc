@@ -1,0 +1,166 @@
+print ('Python na escola de Programcao Alura')
+
+
+nome = "Seu nome"
+idade = 25
+
+
+print (f'Meu nome é {nome} e tenho {idade} anos')
+
+
+print ('A', 'L', 'U', 'R', 'A', sep= '\n')
+
+
+valor_de_pi = 3,14159
+print (f'O valor de PI é {valor_de_pi:.2f}')
+
+
+def configurar_tempo_foco():
+    tempo_foco = input(int("Defina seu tempo de foco (25 a 45 min): "))
+    
+    if 25 <= tempo_foco <= 45:
+        print (f'Tempo de foco definido para' {tempo_foco} 'minutos, com sucesso')
+    else:
+    print('Defina um valor entre 25 e 45 minutos')
+
+
+
+def verificar_numero():
+        numero = input(int('Insira um numero:'))
+
+        if numero % 2 == 0:
+            print("O numero e par")
+        else:
+        print("O numero e impar")
+
+
+
+def classificar_idade():
+        idade = input(int("Digite sua idade: "))
+
+        if 0 < idade <= 12:
+        print("Crianca")
+        
+        elif 12 < idade <= 18:
+            print("Adolescente")
+
+        elif idade > 18:
+        print("Adulto")
+
+        else:
+        print("Valor invalido")
+
+
+
+    usuario_correto = "alura234"
+    senha_correta = "aluno_alura2024"
+
+    usuario = input(int("Digite o nome de usuario"))
+    senha = input(int("Digite sua senha"))
+
+    if usuario == usuario_correto and senha == senha_correta:
+        print("Login realizado com sucesoo")
+
+    else:
+    print("Credenciais invalidas. Tente novamente")
+
+
+    x = float(input("Digite a coordenada x: "))
+    y = float(input("Digite a coordenada y: "))
+
+    if x > 0 and y > 0:
+        print("Os numeros estao no primeiro quadrante")
+
+    elif x < 0 and y > 0:
+    print("Os numeros estao no segundo quadrante")
+
+    elif x < 0 and y < 0:
+    print("Os numeros estao no terceiro quadrante")
+
+    elif x > 0 and y < 0:
+    print("Os numeros estao no quarto quadrante")
+
+    else:
+    print("O ponto esta localizado no eixo de origem")
+
+lits_de_numeros = [1,2,3,4,5,6,7,8,9,10]
+Lista_de_nomes = ['Joao', 'Mateus', 'Carlos', 'Rebecca']
+Lista_de_anos = [2004, 2024]
+
+lista_de_sabores = ['chocolate', 'morango', 'pistache','maracuja','bacio di latte']
+
+for sabor in lista_de_sabores:
+print(sabor)
+
+soma_impares = 0
+for i in range(1, 11, 2):
+    soma_impares += i
+print(soma_impares)
+
+for i in range(10, 0, -1):
+    print(i)
+
+numero_escolhido_da_tabuada = int(input('Digite um numero'))
+
+for i in range(1,11)
+resultado = numero_escolhido_da_tabuada * i
+print(f'{numero_escolhido_da_tabuada} x {i} = {resultado}')
+
+
+lista_de_numeros = [1,34,56,2,77,100,450]
+soma = 0
+
+try:
+     
+for numero in lista_de_numeros:
+soma += numero
+print(f'Soma dos elemesntos = {soma}')
+
+except Exception as e
+print('Ocorreu um erro {e}')
+
+lista_de_valores = [25, 33,78,99,100]
+soma = 0
+
+try:
+     for valor in lista_de_valores:
+        soma += valor 
+        media = soma / len(lista_de_valores)
+        print(f'A media da {lista_de_valores} é {media}')
+
+except ZeroDivisionError:
+     print('Não é possivel realizar a media pois a lista esta vazia')
+
+except Exception as e:
+     print('Ocorreu um erro')
+
+
+
+
+pessoa = [{'nome': 'Luana', 'idade': 19, 'cidade': 'Sao Paulo'}]
+
+pessoa['idade'] = 20
+pessoa['profissao'] = jornalista
+del pessoa['cidade']
+
+numeros_quadrados = {x: x**2 for x in range(1, 6)}
+print(numeros_quadrados)
+
+
+paises = [{'nome': 'Inglaterra', 'idioma': 'ingles', 'nacionalidade': 'britanicos'}, {'nome': 'França', 'idioma': 'frances',
+'nacionalidade': 'frances'}]
+
+    if nome in pessoa
+        print ('A chave nome existe')
+    
+    else
+         print('Chave nome nao existe')
+
+
+
+frase = "Python se tornou uma das linguagens de programação mais populares do mundo nos últimos anos."
+contagem_palavras = {}
+palavras = frase.split()
+for palavra in palavras:
+    contagem_palavras[palavra] = contagem_palavras.get(palavra, 0) + 1
+print(contagem_palavras)
